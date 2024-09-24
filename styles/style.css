@@ -1,0 +1,209 @@
+@import url(./root-color-fonts.css);
+@import url(./fonts.css);
+
+* {
+    font-family: "Young Serif", serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--stone-100);
+}
+
+main {
+    width: 375px;
+    margin: auto;
+}
+
+/* for all the texts and list items, except h1, h2, h3 */
+p,
+li,
+table td,
+table span {
+    font-family: "Outfit";
+    font-weight: 400;
+    color: var(--stone-600);
+    font-size: var(--Text-Preset-4);
+    line-height: 150%;
+}
+
+/* image div */
+.image-box {
+    width: 375px;
+    height: 171px;
+    border-radius: 0;
+    /* background-image: url(../assets/images/top-image.png);
+    background-position: center;
+    background-size: cover; */
+}
+
+.top-image {
+    width: 100%;
+    border-radius: 0;
+}
+
+section {
+    padding: 40px 32px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.introduction-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h1 {
+    color: var(--stone-900);
+    font-size: 3.7rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.h1-description {
+    font-family: "Outfit";
+    color: var(--stone-600);
+    font-size: var(--Text-Preset-4);
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* gaps between title and descriptions */
+.preparation-time,
+.ingredients,
+.instruction-box,
+.nutrion-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.preparation-time {
+    gap: 16px;
+    background-color: var(--rose-50);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.preparation-time li {
+    width: 223px;
+}
+
+.preparation-time li::marker {
+    color: var(--rose-800);
+}
+
+h3 {
+    font-family: "Outfit";
+    font-weight: 600;
+    color: var(--rose-800);
+    font-size: var(--Text-Preset-3-outfit-semi-bold);
+}
+
+.preparation-time li,
+strong {
+    color: var(--stone-600);
+    font-size: var(--Text-Preset-4);
+}
+
+.preparation-time strong {
+    font-weight: 600;
+}
+
+.preparation-time li,
+.ingredients li {
+    text-indent: -24px;
+    margin-left: 28px;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 8px;
+}
+
+ol li {
+    margin-left: 32px;
+    text-indent: -32px;
+}
+
+ol strong {
+    margin-left: 16px;
+}
+
+.preparation-time li,
+.ingredients li,
+.instruction-box li {
+    margin-bottom: 6px;
+    /* line-height: 147%; */
+}
+
+.preparation-time li:last-child,
+.ingredients li:last-child,
+.instruction-box li:last-child {
+    margin-bottom: 0;
+}
+
+.instruction-box li::marker {
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+h2 {
+    font-size: var(--Text-Preset-2);
+    color: var(--brown-800);
+    height: 28px;
+}
+
+.ingredients li::marker,
+.instruction-box li::marker {
+    color: var(--brown-800);
+    margin-left: 8px;
+}
+
+.line {
+    width: 100%;
+    background-color: var(--stone-150);
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 12px 32px;
+}
+
+table span {
+    color: var(--brown-800);
+    font-size: var(--Text-Preset-4);
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 8px;
+    /* Add padding inside table cells */
+    text-align: left;
+    /* Align text inside cells */
+    border-bottom: 1px solid var(--stone-150);
+    /* Adds a black bottom border */
+}
+
+tr:first-child td {
+    padding-top: 0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+    padding-bottom: 0;
+}
