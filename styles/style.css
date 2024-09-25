@@ -15,6 +15,21 @@ main {
     margin: auto;
 }
 
+/* tablets */
+@media only screen and (min-width: 768px) {
+    main {
+        width: 768px;
+        margin: 128px auto;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+    main {
+        width: 1440px;
+    }
+}
+
 /* for all the texts and list items, except h1, h2, h3 */
 p,
 li,
@@ -29,16 +44,37 @@ table span {
 
 /* image div */
 .image-box {
-    width: 375px;
+    width: 100%;
     height: 171px;
     border-radius: 0;
+    margin: auto;
     /* background-image: url(../assets/images/top-image.png);
     background-position: center;
     background-size: cover; */
 }
 
+/* tablets */
+@media only screen and (min-width: 768px) {
+    .image-box {
+        width: 616px;
+        height: 300px;
+        padding: 40px 40px 0 40px;
+        background-color: white;
+        border-radius: 24px 24px 0 0;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+    .image-box {
+        width: 736px;
+    }
+}
+
+
 .top-image {
     width: 100%;
+    height: 100%;
     border-radius: 0;
 }
 
@@ -49,6 +85,23 @@ section {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin: auto;
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 40px;
+        width: 616px;
+        border-radius: 0 0 24px 24px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+    section {
+        width: 736px;
+    }
 }
 
 .introduction-box {
@@ -63,6 +116,15 @@ h1 {
     font-weight: 400;
     line-height: 1;
 }
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+}
+
 
 .h1-description {
     font-family: "Outfit";
@@ -82,7 +144,7 @@ ul {
 .instruction-box,
 .nutrion-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -145,6 +207,21 @@ ol strong {
     margin-bottom: 6px;
     /* line-height: 147%; */
 }
+
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+
+    .preparation-time li,
+    .ingredients li,
+    .instruction-box li {
+        margin-bottom: 8px;
+        line-height: 150%;
+    }
+
+
+}
+
 
 .preparation-time li:last-child,
 .ingredients li:last-child,
